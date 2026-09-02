@@ -46,6 +46,8 @@ interactive, and visually appealing web experiences            </p>
           {/* EXPLORE */}
 {/* EXPLORE */}
 
+{/* EXPLORE */}
+
 <div className="footer-column">
 
   <span className="footer-heading">
