@@ -45,11 +45,7 @@ interactive, and visually appealing web experiences            </p>
 
           {/* EXPLORE */}
 {/* EXPLORE */}
-
-{/* EXPLORE */}
-
 <div className="footer-column">
-
   <span className="footer-heading">
     EXPLORE
   </span>
@@ -66,12 +62,10 @@ interactive, and visually appealing web experiences            </p>
     Hire Me
   </Link>
 
-  <a
-    href="#contact"
-    onClick={(e) => {
-      e.preventDefault();
+  <button
+    type="button"
+    onClick={() => {
       window.location.href = "/#/";
-
       setTimeout(() => {
         document.getElementById("contact")?.scrollIntoView({
           behavior: "smooth",
@@ -80,25 +74,20 @@ interactive, and visually appealing web experiences            </p>
     }}
   >
     Contact
-  </a>
-
+  </button>
 </div>
 
 
 {/* MORE */}
-
 <div className="footer-column">
-
   <span className="footer-heading">
     MORE
   </span>
 
-  <a
-    href="#about"
-    onClick={(e) => {
-      e.preventDefault();
+  <button
+    type="button"
+    onClick={() => {
       window.location.href = "/#/";
-
       setTimeout(() => {
         document.getElementById("about")?.scrollIntoView({
           behavior: "smooth",
@@ -107,14 +96,12 @@ interactive, and visually appealing web experiences            </p>
     }}
   >
     About
-  </a>
+  </button>
 
-  <a
-    href="#skills"
-    onClick={(e) => {
-      e.preventDefault();
+  <button
+    type="button"
+    onClick={() => {
       window.location.href = "/#/";
-
       setTimeout(() => {
         document.getElementById("skills")?.scrollIntoView({
           behavior: "smooth",
@@ -123,14 +110,12 @@ interactive, and visually appealing web experiences            </p>
     }}
   >
     Skills
-  </a>
+  </button>
 
-  <a
-    href="#experience"
-    onClick={(e) => {
-      e.preventDefault();
+  <button
+    type="button"
+    onClick={() => {
       window.location.href = "/#/";
-
       setTimeout(() => {
         document.getElementById("experience")?.scrollIntoView({
           behavior: "smooth",
@@ -139,14 +124,12 @@ interactive, and visually appealing web experiences            </p>
     }}
   >
     Experience
-  </a>
+  </button>
 
-  <a
-    href="#testimonials"
-    onClick={(e) => {
-      e.preventDefault();
+  <button
+    type="button"
+    onClick={() => {
       window.location.href = "/#/";
-
       setTimeout(() => {
         document.getElementById("testimonials")?.scrollIntoView({
           behavior: "smooth",
@@ -155,8 +138,7 @@ interactive, and visually appealing web experiences            </p>
     }}
   >
     Testimonials
-  </a>
-
+  </button>
 </div>
 
           {/* CONNECT */}
