@@ -8,9 +8,8 @@ import {
 
 function Hero() {
   const roles = [
-    "Freelance Web Developer",
-    "Senior Full Stack Web Developer",
-    "React & Next.js Engineer",
+    "Frontend Web Developer",
+    "React Developer",
   ];
 
   const [roleIndex, setRoleIndex] = useState(0);
@@ -56,7 +55,7 @@ function Hero() {
             </p>
 
             <h1 className="hero-name">
-              Muhammad Awais Abid
+              Hina Ishtiaq
             </h1>
 
             {/* ANIMATED ROLE */}
@@ -66,29 +65,44 @@ function Hero() {
             </div>
 
             <p className="hero-description">
-              Full-stack developer specializing in React, Next.js, Node.js
-              and MongoDB. I build modern, responsive and high-performance
-              web applications with clean architecture and professional
-              user experiences.
+              Frontend Developer specializing in React.js, JavaScript, HTML, CSS and Bootstrap. I build modern, responsive, and user-friendly web applications with clean, maintainable code and professional UI/UX. I focus on creating fast,
+               interactive, and visually appealing web experiences
             </p>
 
             {/* MAIN BUTTONS */}
-            <div className="hero-buttons">
+            {/* MAIN BUTTONS */}
+<div className="hero-buttons">
 
-              <a href="#contact" className="btn-primary">
-                Get in touch
-              </a>
+  <a
+    href="#contact"
+    className="btn-primary"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+  >
+    Get in touch
+  </a>
 
-              <a href="/work" className="btn-secondary">
-                View my work
-              </a>
+  <a
+    href="#work"
+    className="btn-secondary"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.hash = "work";
+    }}
+  >
+    View my work
+  </a>
 
-            </div>
+</div>
 
       <div className="hero-socials">
 
   <a
-    href="https://github.com/MuhammadAwaisAbidDev"
+    href="https://github.com/HinaIshtiaqDev"
     target="_blank"
     rel="noreferrer"
     className="social-btn"
@@ -98,7 +112,7 @@ function Hero() {
   </a>
 
   <a
-    href="https://www.linkedin.com/in/muhammadawaisabid/"
+    href="https://www.linkedin.com/in/hinaishtiaq/"
     target="_blank"
     rel="noreferrer"
     className="social-btn"
@@ -126,13 +140,8 @@ function Hero() {
             <div className="glow glow-cyan"></div>
 
             <div className="hero-image-circle">
-
-              <img
-               src={`${process.env.PUBLIC_URL}/assets/1.jpeg`}
-                alt="Muhammad Awais Abid"
-              />
-
-            </div>
+  <span className="hero-letter">H</span>
+</div>
 
             <div className="code-badge">
               &lt;/&gt;
@@ -149,17 +158,17 @@ function Hero() {
       <section className="stats-section">
 
         <div className="stat-box">
-          <strong>7+</strong>
+          <strong>2+</strong>
           <span>Projects shipped</span>
         </div>
 
         <div className="stat-box">
-          <strong>3+</strong>
-          <span>Years of experience</span>
+          <strong>3</strong>
+          <span>Months of experience</span>
         </div>
 
         <div className="stat-box">
-          <strong>12+</strong>
+          <strong>10+</strong>
           <span>Technologies used</span>
         </div>
 

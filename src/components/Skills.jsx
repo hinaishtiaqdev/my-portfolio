@@ -87,50 +87,34 @@ function Skills() {
             <SkillItem icon={<FaCss3Alt />} name="CSS3" />
             <SkillItem icon={<FaJs />} name="JavaScript" />
             <SkillItem icon={<FaReact />} name="React" />
-            <SkillItem icon={<SiNextdotjs />} name="Next.js" />
-            <SkillItem icon={<SiRedux />} name="Redux Toolkit" />
-            <SkillItem icon={<SiTailwindcss />} name="Tailwind CSS" />
             <SkillItem icon={<FaBootstrap />} name="Bootstrap" />
-            <SkillItem icon={<FaMobileAlt />} name="React Native" />
+         
           </SkillCard>
 
-          {/* DATABASE */}
-          <SkillCard title="DATABASE" count="5">
-            <SkillItem icon={<SiMongodb />} name="MongoDB" />
-            <SkillItem icon={<SiMysql />} name="MySQL" />
-            <SkillItem icon={<SiPostgresql />} name="PostgreSQL" />
-            <SkillItem icon={<SiSqlite />} name="SQLite" />
-            <SkillItem icon={<SiMongoose />} name="Mongoose" />
-          </SkillCard>
+          
 
           {/* TOOLS */}
           <SkillCard title="TOOLS" count="6">
             <SkillItem icon={<FaGitAlt />} name="Git" />
             <SkillItem icon={<FaGithub />} name="GitHub" />
-            <SkillItem icon={<SiPostman />} name="Postman" />
             <SkillItem icon={<FaFigma />} name="Figma" />
             <SkillItem icon={<FaCode />} name="VS Code" />
-            <SkillItem icon={<SiVercel />} name="Vercel" />
           </SkillCard>
 
-          {/* BACKEND */}
-          <SkillCard title="BACKEND" count="3">
-            <SkillItem icon={<FaNodeJs />} name="Node.js" />
-            <SkillItem icon={<SiExpress />} name="Express.js" />
-            <SkillItem icon={<SiFastapi />} name="FastAPI" />
-          </SkillCard>
+         
 
           {/* LANGUAGES */}
           <SkillCard title="LANGUAGE" count="4">
             <SkillItem icon={<FaJs />} name="JavaScript" />
-            <SkillItem icon={<SiTypescript />} name="TypeScript" />
+
             <SkillItem icon={<FaJava />} name="Java" />
-            <SkillItem icon={<FaPython />} name="Python" />
+            
           </SkillCard>
 
           {/* PRACTICES */}
           <SkillCard title="PRACTICES" count="4">
             <SkillItem icon={<FaServer />} name="REST APIs" />
+          
             <SkillItem icon={<FaMobileAlt />} name="Responsive Design" />
             <SkillItem icon={<FaCode />} name="Clean Code" />
             <SkillItem icon={<FaRocket />} name="Performance" />

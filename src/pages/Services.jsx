@@ -39,7 +39,7 @@ function Services() {
         <div className="services-container">
 
           <div className="services-grid">
-            {services.slice(0, 5).map((service) => {
+            {services.slice(0, 3).map((service) => {
               const Icon = service.icon;
 
               return (

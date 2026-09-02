@@ -41,6 +41,8 @@
 
   text-decoration: none;
   color: #f8fafc;
+
+  flex-shrink: 0;
 }
 
 .brand-logo {
@@ -66,10 +68,11 @@
   box-shadow: 0 8px 25px rgba(99, 102, 241, 0.25);
 }
 
-.brand-name {
+.brand span {
   font-size: 15px;
   font-weight: 700;
   letter-spacing: -0.3px;
+  white-space: nowrap;
 }
 
 /* ================================
@@ -80,21 +83,32 @@
   display: flex;
   align-items: center;
   gap: 30px;
+
+  flex-shrink: 0;
 }
 
-.desktop-nav a {
+.desktop-nav a,
+.desktop-nav button {
   position: relative;
 
   color: #94a3b8;
   text-decoration: none;
 
+  font-family: inherit;
   font-size: 14px;
   font-weight: 500;
+
+  background: none;
+  border: none;
+  padding: 0;
+
+  cursor: pointer;
 
   transition: color 0.25s ease;
 }
 
-.desktop-nav a::after {
+.desktop-nav a::after,
+.desktop-nav button::after {
   content: "";
 
   position: absolute;
@@ -115,11 +129,13 @@
   transition: width 0.25s ease;
 }
 
-.desktop-nav a:hover {
+.desktop-nav a:hover,
+.desktop-nav button:hover {
   color: #f8fafc;
 }
 
-.desktop-nav a:hover::after {
+.desktop-nav a:hover::after,
+.desktop-nav button:hover::after {
   width: 100%;
 }
 
@@ -131,6 +147,8 @@
   display: flex;
   align-items: center;
   gap: 9px;
+
+  flex-shrink: 0;
 }
 
 .project-btn {
@@ -142,6 +160,7 @@
 
   padding: 0 18px;
 
+  border: none;
   border-radius: 999px;
 
   background: linear-gradient(
@@ -153,8 +172,11 @@
   color: white;
   text-decoration: none;
 
+  font-family: inherit;
   font-size: 14px;
   font-weight: 700;
+
+  cursor: pointer;
 
   box-shadow: 0 8px 25px rgba(99, 102, 241, 0.22);
 
@@ -296,21 +318,33 @@
     visibility: visible;
   }
 
-  .mobile-menu a {
+  .mobile-menu a,
+  .mobile-menu button {
+    width: 100%;
+
     padding: 13px 14px;
 
+    border: none;
     border-radius: 10px;
+
+    background: transparent;
 
     color: #94a3b8;
     text-decoration: none;
 
+    font-family: inherit;
     font-size: 15px;
     font-weight: 600;
+
+    text-align: left;
+
+    cursor: pointer;
 
     transition: all 0.2s ease;
   }
 
-  .mobile-menu a:hover {
+  .mobile-menu a:hover,
+  .mobile-menu button:hover {
     color: #ffffff;
     background: rgba(99, 102, 241, 0.1);
   }
@@ -318,9 +352,10 @@
   .mobile-project-btn {
     margin-top: 10px;
 
-    display: flex;
+    display: flex !important;
     align-items: center;
     justify-content: center;
+
     gap: 7px;
 
     background: linear-gradient(
@@ -331,7 +366,7 @@
 
     color: white !important;
 
-    text-align: center;
+    text-align: center !important;
   }
 }
 
@@ -345,7 +380,7 @@
     width: calc(100% - 28px);
   }
 
-  .brand-name {
+  .brand span {
     font-size: 14px;
   }
 
@@ -361,7 +396,6 @@
   }
 }
 
-
 /* ================================
    DARK / LIGHT THEME
 ================================ */
@@ -375,11 +409,13 @@
   color: #0f172a;
 }
 
-.navbar.light .desktop-nav a {
+.navbar.light .desktop-nav a,
+.navbar.light .desktop-nav button {
   color: #475569;
 }
 
-.navbar.light .desktop-nav a:hover {
+.navbar.light .desktop-nav a:hover,
+.navbar.light .desktop-nav button:hover {
   color: #0f172a;
 }
 
@@ -405,11 +441,13 @@
   border-bottom: 1px solid rgba(15, 23, 42, 0.12);
 }
 
-.navbar.light .mobile-menu a {
+.navbar.light .mobile-menu a,
+.navbar.light .mobile-menu button {
   color: #475569;
 }
 
-.navbar.light .mobile-menu a:hover {
+.navbar.light .mobile-menu a:hover,
+.navbar.light .mobile-menu button:hover {
   color: #0f172a;
   background: rgba(79, 70, 229, 0.08);
 }

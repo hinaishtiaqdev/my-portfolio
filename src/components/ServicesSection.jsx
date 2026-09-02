@@ -13,19 +13,10 @@ import { useNavigate } from "react-router-dom";
 import "./ServicesSection.css";
 
 const services = [
-  {
-    number: "01",
-    icon: <FaGlobe />,
-    title: "Full-Stack Web Applications",
-    description:
-      "End-to-end web applications built with modern frontend, backend, database, authentication, and business logic.",
-    technologies: ["React.js", "Next.js", "Node.js", "MongoDB"],
-    price: "$900",
-    slug: "full-stack-web-applications",
-  },
+ 
  
   {
-    number: "02",
+    number: "01",
     icon: <FaPaintBrush />,
     title: "Frontend Development",
     description:
@@ -35,7 +26,7 @@ const services = [
     slug: "frontend-development",
   },
   {
-    number: "03",
+    number: "02",
     icon: <FaThLarge />,
     title: "Admin Panels & Dashboards",
     description:
@@ -45,7 +36,7 @@ const services = [
     slug: "admin-panels-dashboards",
   },
   {
-    number: "04",
+    number: "03",
     icon: <FaCode />,
     title: "API Development & Integration",
     description:
@@ -56,7 +47,7 @@ const services = [
   },
 
   {
-    number: "05",
+    number: "04",
     icon: <FaLightbulb />,
     title: "Consulting & Code Review",
     description:

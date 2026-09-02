@@ -99,30 +99,12 @@ function ServiceDetails() {
 
                 <div className="service-benefits">
 
-                  <div className="service-benefit">
-                    <FiCheckCircle />
-                    <span>Clean and responsive user interface</span>
-                  </div>
-
-                  <div className="service-benefit">
-                    <FiCheckCircle />
-                    <span>Modern and scalable application structure</span>
-                  </div>
-
-                  <div className="service-benefit">
-                    <FiCheckCircle />
-                    <span>API integration and data management</span>
-                  </div>
-
-                  <div className="service-benefit">
-                    <FiCheckCircle />
-                    <span>Authentication and role-based functionality</span>
-                  </div>
-
-                  <div className="service-benefit">
-                    <FiCheckCircle />
-                    <span>Deployment support and project handover</span>
-                  </div>
+                  {service.features.map((feature, index) => (
+                    <div className="service-benefit" key={index}>
+                      <FiCheckCircle />
+                      <span>{feature}</span>
+                    </div>
+                  ))}
 
                 </div>
 
@@ -138,14 +120,14 @@ function ServiceDetails() {
 
                 <p>
                   I start by understanding the project requirements,
-                  business goals and user needs. From there, I plan the
-                  architecture, build the required functionality and
-                  continuously refine the experience.
+                  design goals, and user needs. I then build the interface
+                  using clean, reusable, and maintainable frontend code.
                 </p>
 
                 <p>
-                  The goal is to deliver a solution that is responsive,
-                  maintainable and ready to grow with your business.
+                  My focus is on creating responsive, accessible, and
+                  user-friendly interfaces that work smoothly across
+                  desktop, tablet, and mobile devices.
                 </p>
 
               </div>
@@ -187,8 +169,9 @@ function ServiceDetails() {
                 <h3>{service.title}</h3>
 
                 <p>
-                  A professional development service focused on
-                  delivering reliable and practical solutions.
+                  A professional frontend development service focused on
+                  creating modern, responsive, and user-friendly web
+                  experiences.
                 </p>
 
               </div>

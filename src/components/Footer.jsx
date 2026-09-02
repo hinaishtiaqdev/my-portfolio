@@ -22,18 +22,18 @@ function Footer() {
             <div className="footer-logo-row">
 
               <div className="footer-logo">
-                MA
+                HI
               </div>
 
               <h3>
-                Muhammad Awais Abid
+                Hina Ishtiaq
               </h3>
 
             </div>
 
             <p>
-              Full-stack developer specialising in React, Next.js, Node.js, and MongoDB, with a focus on AI automation. I turn complex requirements into fast, maintainable products — from multi-tenant SaaS platforms to internal dashboards
-            </p>
+Frontend Developer specializing in React.js, JavaScript, HTML, CSS and Bootstrap. I build modern, responsive, and user-friendly web applications with clean, maintainable code and professional UI/UX. I focus on creating fast, 
+interactive, and visually appealing web experiences            </p>
 
             <div className="footer-availability">
               <span></span>
@@ -44,58 +44,118 @@ function Footer() {
 
 
           {/* EXPLORE */}
+{/* EXPLORE */}
 
-          <div className="footer-column">
+<div className="footer-column">
 
-            <span className="footer-heading">
-              EXPLORE
-            </span>
+  <span className="footer-heading">
+    EXPLORE
+  </span>
 
-            <Link to="/work">
-              Work
-            </Link>
+  <Link to="/work">
+    Work
+  </Link>
 
-            <Link to="/services">
-              Services
-            </Link>
+  <Link to="/services">
+    Services
+  </Link>
 
-            <Link to="/hire">
-              Hire Me
-            </Link>
+  <Link to="/hire">
+    Hire Me
+  </Link>
 
-            <a href="#contact">
-              Contact
-            </a>
+  <a
+    href="#contact"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
-          </div>
+      setTimeout(() => {
+        document.getElementById("contact")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Contact
+  </a>
+
+</div>
 
 
-          {/* MORE */}
+{/* MORE */}
 
-          <div className="footer-column">
+<div className="footer-column">
 
-            <span className="footer-heading">
-              MORE
-            </span>
+  <span className="footer-heading">
+    MORE
+  </span>
 
-            <a href="#about">
-              About
-            </a>
+  <a
+    href="#about"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
-            <a href="#skills">
-              Skills
-            </a>
+      setTimeout(() => {
+        document.getElementById("about")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    About
+  </a>
 
-            <a href="#experience">
-              Experience
-            </a>
+  <a
+    href="#skills"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
-            <a href="#testimonials">
-              Testimonials
-            </a>
+      setTimeout(() => {
+        document.getElementById("skills")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Skills
+  </a>
 
-          </div>
+  <a
+    href="#experience"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
 
+      setTimeout(() => {
+        document.getElementById("experience")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Experience
+  </a>
+
+  <a
+    href="#testimonials"
+    onClick={(e) => {
+      e.preventDefault();
+      window.location.href = "/#/";
+
+      setTimeout(() => {
+        document.getElementById("testimonials")?.scrollIntoView({
+          behavior: "smooth",
+        });
+      }, 100);
+    }}
+  >
+    Testimonials
+  </a>
+
+</div>
 
           {/* CONNECT */}
 
@@ -106,7 +166,7 @@ function Footer() {
             </span>
 
             <a
-              href="https://github.com/MuhammadAwaisAbidDev"
+              href="https://github.com/HinaIshtiaqDev"
               target="_blank"
               rel="noreferrer"
             >
@@ -115,7 +175,7 @@ function Footer() {
             </a>
 
             <a
-              href="https://www.linkedin.com/in/muhammadawaisabid/"
+              href="https://www.linkedin.com/in/hinaishtiaq/"
               target="_blank"
               rel="noreferrer"
             >
@@ -136,11 +196,11 @@ function Footer() {
         <div className="footer-bottom">
 
           <span>
-            © 2026 Muhammad Awais Abid. All rights reserved.
+            © 2026 Hina Ishtiaq. All rights reserved.
           </span>
 
           <span>
-            Built with React.js · Islamabad, Pakistan
+            Built with React.js · Jhelum, Pakistan
           </span>
 
         </div>

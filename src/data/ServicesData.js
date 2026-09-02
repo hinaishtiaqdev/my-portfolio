@@ -1,154 +1,94 @@
 import {
-  FiGlobe,
   FiPenTool,
-  FiGrid,
   FiCode,
-  FiUsers,
+  FiMonitor,
 } from "react-icons/fi";
 
 export const services = [
   {
     id: 1,
-    slug: "full-stack-web-applications",
-    number: "01",
-    icon: FiGlobe,
-
-    title: "Full-Stack Web Applications",
-
-    description:
-      "End-to-end web applications built with modern frontend, backend, database, authentication, and business logic.",
-
-    technologies: [
-      "React.js",
-      "Next.js",
-      "Node.js",
-      "MongoDB",
-    ],
-
-    price: "$900",
-
-    features: [
-      "Requirements and architecture plan before a line of code",
-      "React or Next.js front end, fully responsive",
-      "Node.js / Next.js API layer with MongoDB",
-      "Authentication, roles, and permissions",
-      "Deployment, environment setup, and handover docs",
-    ],
-  },
-
-  {
-    id: 2,
     slug: "frontend-development",
-    number: "02",
+    number: "01",
     icon: FiPenTool,
 
     title: "Frontend Development",
 
     description:
-      "Modern, responsive and user-friendly interfaces built from designs or developed from scratch.",
+      "Modern, responsive and user-friendly web interfaces built with clean code and a strong focus on user experience.",
 
     technologies: [
       "React.js",
-      "Next.js",
       "JavaScript",
-      "Tailwind CSS",
+      "HTML",
+      "CSS",
     ],
 
     price: "$600",
 
     features: [
-      "Pixel-perfect responsive interfaces",
-      "React.js and Next.js development",
+      "Responsive website development",
+      "React.js frontend development",
       "Mobile, tablet, and desktop optimization",
-      "Reusable components and clean UI structure",
-      "Smooth interactions and modern animations",
+      "Reusable and maintainable components",
+      "Modern UI interactions and animations",
+    ],
+  },
+
+  {
+    id: 2,
+    slug: "react-development",
+    number: "02",
+    icon: FiCode,
+
+    title: "React.js Development",
+
+    description:
+      "Scalable and interactive React.js applications built with reusable components, clean architecture, and smooth performance.",
+
+    technologies: [
+      "React.js",
+      "React Router",
+      "JavaScript",
+      "REST API",
+    ],
+
+    price: "$700",
+
+    features: [
+      "Custom React.js applications",
+      "Reusable component development",
+      "React Router integration",
+      "REST API integration",
+      "Clean and scalable frontend architecture",
     ],
   },
 
   {
     id: 3,
-    slug: "admin-panels-dashboards",
+    slug: "responsive-ui-development",
     number: "03",
-    icon: FiGrid,
+    icon: FiMonitor,
 
-    title: "Admin Panels & Dashboards",
-
-    description:
-      "Powerful internal dashboards and admin panels with CRUD operations, roles, analytics, charts, and management tools.",
-
-    technologies: [
-      "Next.js",
-      "MongoDB",
-      "Charts",
-      "RBAC",
-    ],
-
-    price: "$800",
-
-    features: [
-      "Custom admin dashboard design",
-      "CRUD operations and data management",
-      "Role-based access control",
-      "Charts and analytics",
-      "Tables, filters, search, and exports",
-    ],
-  },
-
-  {
-    id: 4,
-    slug: "api-development-integration",
-    number: "04",
-    icon: FiCode,
-
-    title: "API Development & Integration",
+    title: "Responsive UI Development",
 
     description:
-      "Reliable REST APIs designed to be used, versioned, documented, rate-limited, and integrated with modern applications.",
+      "Clean and professional user interfaces that work smoothly across desktops, tablets, and mobile devices.",
 
     technologies: [
-      "Node.js",
-      "Express",
-      "MongoDB",
-      "REST",
+      "HTML",
+      "CSS",
+      "Bootstrap",
+      "Tailwind CSS",
     ],
 
     price: "$500",
 
     features: [
-      "REST API development",
-      "Authentication and authorization",
-      "Database integration",
-      "API validation and error handling",
-      "Third-party API integrations",
-    ],
-  },
-
-  {
-    id: 5,
-    slug: "consulting-code-review",
-    number: "05",
-    icon: FiUsers,
-
-    title: "Consulting & Code Review",
-
-    description:
-      "A second pair of eyes on architecture, a stalled codebase, performance problems, or technical decisions.",
-
-    technologies: [
-      "Architecture",
-      "Code Review",
-      "Mentoring",
-      
-    ],
-
-    price: "$300",
-
-    features: [
-      "Existing codebase review",
-      "Architecture and technical guidance",
-      "Performance and code quality review",
-      "Bug and issue investigation",
-      "Developer mentoring and recommendations",
+      "Responsive UI implementation",
+      "Desktop and mobile optimization",
+      "Modern website layouts",
+      "Cross-device compatibility",
+      "Clean and consistent styling",
     ],
   },
 ];

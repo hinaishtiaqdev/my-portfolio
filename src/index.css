@@ -87,3 +87,22 @@ select {
 .light-theme .hero-description {
   color: #64748b;
 }
+
+/* CUSTOM SCROLLBAR */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #061321;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #475569;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #255597;
+}

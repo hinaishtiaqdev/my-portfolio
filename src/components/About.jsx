@@ -22,32 +22,27 @@ function About() {
         <div className="about-text">
 
           <p>
-            I'm a Senior full-stack developer based in Islamabad, Pakistan,
-            specialising in React, Next.js, Node.js, and MongoDB. I build
-            and ship production systems that businesses depend on — from
-            the data model up to the interface.
-          </p>
+            I'm a Frontend Developer specializing in React.js, JavaScript, HTML, CSS, Bootstrap, and responsive web design. I build modern, high-performance, and user-friendly web interfaces with clean and reusable code.
 
-          <p>
-            At Synexus Technologies I develop internal enterprise tooling
-            across the stack: React and Redux on the frontend, Next.js API
-            routes and MongoDB schemas on the backend. I care about clean
-            architecture, maintainable code, and systems that scale
-            predictably as teams grow.
-          </p>
+I focus on turning designs and ideas into responsive web applications that provide smooth and engaging user experiences across all devices.
 
-          <p>
-            Alongside that I design AI-driven automations — integrating
-            language models and workflow tooling to remove repetitive
-            manual work — and take on selected freelance engagements:
-            SaaS MVPs, internal dashboards, marketing sites, and
-            third-party API integrations.
+I also work with Git, GitHub, and modern development tools to create reliable and scalable frontend solutions.
           </p>
 
           <div className="about-buttons">
-            <a href="#contact" className="about-primary">
-              Work with me
-            </a>
+  <a
+    href="#contact"
+    className="about-primary"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+  >
+    Work with me
+  </a>
+
 
             <a href="/resume.pdf" className="about-resume">
               👁 Resume
@@ -71,7 +66,7 @@ function About() {
             <div className="about-icon">💼</div>
             <div>
               <span>EXPERIENCE</span>
-              <h3>3+ years shipping production software</h3>
+              <h3>2+ months shipping production software</h3>
             </div>
           </div>
 

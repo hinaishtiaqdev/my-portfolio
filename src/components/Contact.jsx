@@ -51,7 +51,7 @@ function Contact() {
           Accept: "application/json",
         },
         body: JSON.stringify({
-          access_key: "ac8fe24a-ac49-4edb-b7d1-4afdd6a0c7d0",
+          access_key: "7737539f-7cf7-4f81-a096-992ccb0e7c81",
 
           subject: `New Portfolio Contact from ${formData.name}`,
 
@@ -139,25 +139,13 @@ function Contact() {
                 <span>EMAIL</span>
 
                 <strong>
-                  muhammadawaisabid84@gmail.com
+                  hinaishtiaqdev@gmail.com
                 </strong>
               </div>
             </div>
 
             {/* WHATSAPP */}
-            <div className="contact-item">
-              <div className="contact-icon">
-                <FiMessageCircle />
-              </div>
-
-              <div>
-                <span>WHATSAPP</span>
-
-                <strong>
-                  +92 320 6481994
-                </strong>
-              </div>
-            </div>
+            
 
             {/* LOCATION */}
             <div className="contact-item">
@@ -169,7 +157,7 @@ function Contact() {
                 <span>BASED IN</span>
 
                 <strong>
-                  Islamabad, Pakistan
+                  Jhelum, Pakistan
                 </strong>
               </div>
             </div>
@@ -185,7 +173,7 @@ function Contact() {
 
                 <div className="profile-links">
                   <a
-                    href="https://github.com/MuhammadAwaisAbidDev"
+                    href="https://github.com/HinaIshtiaqDev"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -194,7 +182,7 @@ function Contact() {
                   </a>
 
                   <a
-                    href="https://www.linkedin.com/in/muhammadawaisabid/"
+                    href="https://www.linkedin.com/in/hinaishtiaq/"
                     target="_blank"
                     rel="noreferrer"
                   >

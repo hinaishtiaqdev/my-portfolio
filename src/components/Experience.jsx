@@ -158,7 +158,7 @@ function Experience() {
                   "Worked with MySQL, PostgreSQL, MongoDB, Mongoose, and modern JavaScript technologies.",
                 ]}
                 technologies={[
-                  "React",
+                  "React.js",
                   "Next.js",
                   "TypeScript",
                   "FastAPI",
@@ -171,32 +171,7 @@ function Experience() {
               />
 
 
-              {/* ============================
-                  EXPERIENCE 2
-              ============================ */}
-
-              <ExperienceItem
-                title="MERN Developer"
-                company="Alestra Solutions"
-                location="Islamabad, Pakistan"
-                duration="2024 — 2026"
-                description="Developed and maintained modern full-stack web applications using the MERN stack, with a focus on responsive interfaces, backend APIs, and database integration."
-                points={[
-                  "Built responsive and user-friendly web interfaces using React.js.",
-                  "Developed backend APIs and server-side functionality using Node.js and Express.js.",
-                  "Worked with MongoDB for database design, data management, and application integration.",
-                  "Integrated frontend and backend services to build complete full-stack web applications.",
-                ]}
-                technologies={[
-                  "MongoDB",
-                  "Express.js",
-                  "React",
-                  "Node.js",
-                  "REST APIs",
-                  "JavaScript",
-                ]}
-              />
-
+             
 
               {/* ============================
                   EXPERIENCE 3
@@ -206,7 +181,7 @@ function Experience() {
                 title="Full Stack Developer"
                 company="Freelance"
                 location="Remote"
-                duration="2023 — Present"
+                duration="2026 — Present"
                 description="Designing and developing web applications for clients including dashboards, business websites, and full-stack applications."
                 points={[
                   "Developed responsive websites and web applications from concept to deployment.",
@@ -248,7 +223,7 @@ function Experience() {
     <div className="education-content">
       <div className="education-top">
         <h3>Bachelor of Science, Software Engineering</h3>
-        <span>2024 — 2027</span>
+        <span>2025 — 2029</span>
       </div>
 
       <h4>National University of Modern Languages (NUML)</h4>
@@ -276,20 +251,18 @@ function Experience() {
     <div className="education-content">
       <div className="education-top">
         
-        <h3>Diploma of Information Communication Technology (ICT)</h3>
-        <span>2021 — 2024</span>
+        <h3>FSc Pre-Engineering</h3>
+        <span>2022 — 2024</span>
       </div>
 
-      <h4>Construction Technology Training Institute (CTTI)</h4>
+      <h4>Fauji Foundation</h4>
 
       <p className="education-location">
-        Islamabad, Pakistan
+        Jhelum, Pakistan
       </p>
 
       <p className="education-description">
-        Studied information and communication technology with practical
-        experience in computer applications, programming, networking,
-        and modern IT technologies.
+        Focused on mathematics, physics, and chemistry, providing a strong foundation for engineering studies.
       </p>
     </div>
   </div>

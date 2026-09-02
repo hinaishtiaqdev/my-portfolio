@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import {
   FiMenu,
   FiX,
@@ -11,15 +11,26 @@ import "./Navbar.css";
 
 const Navbar = ({ darkMode, setDarkMode }) => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
+  // Scroll to Home sections
+  const handleSectionClick = (id) => {
+    setMenuOpen(false);
+
+    navigate("/");
+
+    setTimeout(() => {
+      document.getElementById(id)?.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }, 100);
+  };
 
   const navLinks = [
-    { name: "Work", href: "work" },
-    { name: "Services", href: "services" },
-    { name: "Hire Me", href: "hire" },
-   
-    { name: "About", href: "#about" },
-    { name: "Contact", href: "#contact" },
+    { name: "Work", href: "/work" },
+    { name: "Services", href: "/services" },
+    { name: "Hire Me", href: "/hire" },
   ];
 
   return (
@@ -27,27 +38,46 @@ const Navbar = ({ darkMode, setDarkMode }) => {
       <div className="navbar-container">
 
         {/* Logo */}
-       <Link to="/" className="brand">
-  <div className="brand-logo">MA</div>
-  <span>Muhammad Awais Abid</span>
-</Link>
+        <Link to="/" className="brand">
+          <div className="brand-logo">HI</div>
+          <span>Hina Ishtiaq</span>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="desktop-nav">
           {navLinks.map((link) => (
-            <a key={link.name} href={link.href}>
+            <Link key={link.name} to={link.href}>
               {link.name}
-            </a>
+            </Link>
           ))}
+
+          <button
+            type="button"
+            onClick={() => handleSectionClick("about")}
+          >
+            About
+          </button>
+
+          <button
+            type="button"
+            onClick={() => handleSectionClick("contact")}
+          >
+            Contact
+          </button>
         </nav>
 
         {/* Actions */}
         <div className="navbar-actions">
 
-          <a href="#contact" className="project-btn">
+          {/* Start Project */}
+          <button
+            type="button"
+            className="project-btn"
+            onClick={() => handleSectionClick("contact")}
+          >
             Start a project
             <FiArrowUpRight />
-          </a>
+          </button>
 
           {/* Theme Toggle */}
           <button
@@ -72,24 +102,40 @@ const Navbar = ({ darkMode, setDarkMode }) => {
 
       {/* Mobile Navigation */}
       <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
+
         {navLinks.map((link) => (
-          <a
+          <Link
             key={link.name}
-            href={link.href}
+            to={link.href}
             onClick={() => setMenuOpen(false)}
           >
             {link.name}
-          </a>
+          </Link>
         ))}
 
-        <a
-          href="#contact"
+        <button
+          type="button"
+          onClick={() => handleSectionClick("about")}
+        >
+          About
+        </button>
+
+        <button
+          type="button"
+          onClick={() => handleSectionClick("contact")}
+        >
+          Contact
+        </button>
+
+        <button
+          type="button"
           className="mobile-project-btn"
-          onClick={() => setMenuOpen(false)}
+          onClick={() => handleSectionClick("contact")}
         >
           Start a project
           <FiArrowUpRight />
-        </a>
+        </button>
+
       </div>
     </header>
   );

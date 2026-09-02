@@ -30,9 +30,9 @@ function Testimonials() {
           </div>
 
           <p className="testimonial-text">
-            “Awais took a vague brief and came back with a clear plan,
-            then shipped it ahead of schedule. The code was clean enough
-            that our own team picked it up without a handover call.”
+            “Hina understood our design requirements quickly and turned them
+into a clean, responsive interface. Her attention to detail and
+modern approach resulted in a polished and user-friendly experience.”
           </p>
 
           <div className="testimonial-divider"></div>
@@ -44,7 +44,7 @@ function Testimonials() {
             </div>
 
             <div>
-              <h3>Muhammad Ibrahim</h3>
+              <h3>Muhammad Ahmad</h3>
               <span>Product Lead, Private Client</span>
             </div>
 

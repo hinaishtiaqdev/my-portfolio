@@ -23,14 +23,27 @@ function ProjectCTA() {
 
           <div className="project-cta-buttons">
 
-            <a href="#contact" className="cta-primary">
-              Start a project
-              <FiArrowRight />
-            </a>
+            <div className="cta-buttons">
 
-            <a href="/hire" className="cta-secondary">
-              See how I work
-            </a>
+  <a
+    href="#contact"
+    className="cta-primary"
+    onClick={(e) => {
+      e.preventDefault();
+      document.getElementById("contact")?.scrollIntoView({
+        behavior: "smooth",
+      });
+    }}
+  >
+    Start a project
+    <FiArrowRight />
+  </a>
+
+  <a href="/#/hire" className="cta-secondary">
+    See how I work
+  </a>
+
+</div>
 
           </div>
 
