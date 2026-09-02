@@ -38,11 +38,11 @@ function Footer() {
             <div className="footer-logo-row">
 
               <div className="footer-logo">
-                MA
+                HI
               </div>
 
               <h3>
-                Muhammad Awais Abid
+                Hina Ishtiaq
               </h3>
 
             </div>
