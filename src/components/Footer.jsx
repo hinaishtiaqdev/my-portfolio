@@ -4,10 +4,27 @@ import {
   FiLinkedin,
   FiMail
 } from "react-icons/fi";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Footer.css";
 
 function Footer() {
+  const navigate = useNavigate();
+
+  const goToSection = (id) => {
+    navigate("/");
+
+    setTimeout(() => {
+      const section = document.getElementById(id);
+
+      if (section) {
+        section.scrollIntoView({
+          behavior: "smooth",
+          block: "start",
+        });
+      }
+    }, 300);
+  };
+
   return (
     <footer className="footer">
 
@@ -16,24 +33,26 @@ function Footer() {
         <div className="footer-main">
 
           {/* BRAND */}
-
           <div className="footer-brand">
 
             <div className="footer-logo-row">
 
               <div className="footer-logo">
-                HI
+                MA
               </div>
 
               <h3>
-                Hina Ishtiaq
+                Muhammad Awais Abid
               </h3>
 
             </div>
 
             <p>
-Frontend Developer specializing in React.js, JavaScript, HTML, CSS and Bootstrap. I build modern, responsive, and user-friendly web applications with clean, maintainable code and professional UI/UX. I focus on creating fast, 
-interactive, and visually appealing web experiences            </p>
+              Frontend Developer specializing in React.js, JavaScript,
+              HTML, CSS and Bootstrap. I build modern, responsive, and
+              user-friendly web applications with clean, maintainable
+              code and professional UI/UX.
+            </p>
 
             <div className="footer-availability">
               <span></span>
@@ -44,105 +63,73 @@ interactive, and visually appealing web experiences            </p>
 
 
           {/* EXPLORE */}
-{/* EXPLORE */}
-<div className="footer-column">
-  <span className="footer-heading">
-    EXPLORE
-  </span>
+          <div className="footer-column">
 
-  <Link to="/work">
-    Work
-  </Link>
+            <span className="footer-heading">
+              EXPLORE
+            </span>
 
-  <Link to="/services">
-    Services
-  </Link>
+            <Link to="/work">
+              Work
+            </Link>
 
-  <Link to="/hire">
-    Hire Me
-  </Link>
+            <Link to="/services">
+              Services
+            </Link>
 
-  <button
-    type="button"
-    onClick={() => {
-      window.location.href = "/#/";
-      setTimeout(() => {
-        document.getElementById("contact")?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }, 100);
-    }}
-  >
-    Contact
-  </button>
-</div>
+            <Link to="/hire">
+              Hire Me
+            </Link>
+
+            <button
+              type="button"
+              onClick={() => goToSection("contact")}
+            >
+              Contact
+            </button>
+
+          </div>
 
 
-{/* MORE */}
-<div className="footer-column">
-  <span className="footer-heading">
-    MORE
-  </span>
+          {/* MORE */}
+          <div className="footer-column">
 
-  <button
-    type="button"
-    onClick={() => {
-      window.location.href = "/#/";
-      setTimeout(() => {
-        document.getElementById("about")?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }, 100);
-    }}
-  >
-    About
-  </button>
+            <span className="footer-heading">
+              MORE
+            </span>
 
-  <button
-    type="button"
-    onClick={() => {
-      window.location.href = "/#/";
-      setTimeout(() => {
-        document.getElementById("skills")?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }, 100);
-    }}
-  >
-    Skills
-  </button>
+            <button
+              type="button"
+              onClick={() => goToSection("about")}
+            >
+              About
+            </button>
 
-  <button
-    type="button"
-    onClick={() => {
-      window.location.href = "/#/";
-      setTimeout(() => {
-        document.getElementById("experience")?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }, 100);
-    }}
-  >
-    Experience
-  </button>
+            <button
+              type="button"
+              onClick={() => goToSection("skills")}
+            >
+              Skills
+            </button>
 
-  <button
-    type="button"
-    onClick={() => {
-      window.location.href = "/#/";
-      setTimeout(() => {
-        document.getElementById("testimonials")?.scrollIntoView({
-          behavior: "smooth",
-        });
-      }, 100);
-    }}
-  >
-    Testimonials
-  </button>
-</div>
+            <button
+              type="button"
+              onClick={() => goToSection("experience")}
+            >
+              Experience
+            </button>
+
+            <button
+              type="button"
+              onClick={() => goToSection("testimonials")}
+            >
+              Testimonials
+            </button>
+
+          </div>
+
 
           {/* CONNECT */}
-
           <div className="footer-column">
 
             <span className="footer-heading">
@@ -167,16 +154,20 @@ interactive, and visually appealing web experiences            </p>
               LinkedIn
             </a>
 
-            <a href="#contact">
+            <button
+              type="button"
+              onClick={() => goToSection("contact")}
+            >
               <FiMail />
               Email
-            </a>
+            </button>
 
           </div>
 
         </div>
 
 
+        {/* FOOTER BOTTOM */}
         <div className="footer-bottom">
 
           <span>

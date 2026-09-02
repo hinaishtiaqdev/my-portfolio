@@ -197,9 +197,9 @@ font-weight: 500;
   font: inherit;
   text-align: left;
   cursor: pointer;
+  color: #9aaabd;
 }
 
 .footer-column button:hover {
-  color: #fff;
+  color: #8c87a7;
 }
-
